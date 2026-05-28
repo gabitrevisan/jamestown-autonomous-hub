@@ -1,1 +1,2 @@
-# 🛰️ Jamestown Hub - Secure DevOps Tools & Cloud Computing
+# jamestown-autonomous-hub
+Global Solution - Seurity DevOps
