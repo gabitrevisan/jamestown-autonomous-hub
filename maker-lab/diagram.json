@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "author": "Jamestown Autonomous Hub — PBML FIAP 2026",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 200, "left": 260, "attrs": {} },
+    {
+      "type": "wokwi-servo",
+      "id": "servoBase",
+      "top": 0,
+      "left": 0,
+      "attrs": { "horn": "single" }
+    },
+    {
+      "type": "wokwi-servo",
+      "id": "servoLift",
+      "top": 0,
+      "left": 180,
+      "attrs": { "horn": "single" }
+    },
+    {
+      "type": "wokwi-servo",
+      "id": "servoGrip",
+      "top": 0,
+      "left": 360,
+      "attrs": { "horn": "single" }
+    },
+    {
+      "type": "wokwi-analog-joystick",
+      "id": "joyBase",
+      "top": 402.6,
+      "left": -196.2,
+      "attrs": {}
+    },
+    { "type": "wokwi-analog-joystick", "id": "joyLift", "top": 402.6, "left": -23.4, "attrs": {} },
+    {
+      "type": "wokwi-analog-joystick",
+      "id": "joyGrip",
+      "top": 402.6,
+      "left": 149.4,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btnMode",
+      "top": 450,
+      "left": 530,
+      "attrs": { "color": "white" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "ledStatus",
+      "top": 332.4,
+      "left": 570.2,
+      "attrs": { "color": "green" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "resLed",
+      "top": 390,
+      "left": 610,
+      "attrs": { "value": "220" }
+    }
+  ],
+  "connections": [
+    [ "uno:GND.1", "ledStatus:C", "black", [] ],
+    [ "ledStatus:A", "resLed:1", "green", [] ],
+    [ "resLed:2", "uno:13", "green", [] ],
+    [ "servoBase:GND", "uno:GND.2", "black", [] ],
+    [ "servoBase:V+", "uno:5V", "red", [] ],
+    [ "servoBase:PWM", "uno:11", "orange", [] ],
+    [ "servoLift:GND", "uno:GND.3", "black", [] ],
+    [ "servoLift:V+", "uno:5V", "red", [] ],
+    [ "servoLift:PWM", "uno:9", "orange", [] ],
+    [ "servoGrip:GND", "uno:GND.4", "black", [] ],
+    [ "servoGrip:V+", "uno:5V", "red", [] ],
+    [ "servoGrip:PWM", "uno:10", "orange", [] ],
+    [ "joyBase:VCC", "uno:5V", "red", [] ],
+    [ "joyBase:GND", "uno:GND.5", "black", [] ],
+    [ "joyBase:HORZ", "uno:A0", "blue", [] ],
+    [ "joyBase:SEL", "uno:2", "white", [] ],
+    [ "joyLift:VCC", "uno:5V", "red", [] ],
+    [ "joyLift:GND", "uno:GND.6", "black", [] ],
+    [ "joyLift:HORZ", "uno:A1", "yellow", [] ],
+    [ "joyLift:SEL", "uno:3", "white", [] ],
+    [ "joyGrip:VCC", "uno:5V", "red", [] ],
+    [ "joyGrip:GND", "uno:GND.7", "black", [] ],
+    [ "joyGrip:HORZ", "uno:A2", "purple", [] ],
+    [ "btnMode:1.l", "uno:8", "white", [] ],
+    [ "btnMode:2.l", "uno:GND.8", "black", [] ]
+  ],
+  "dependencies": {}
+}
