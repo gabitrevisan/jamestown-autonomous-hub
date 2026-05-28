@@ -1,0 +1,30 @@
+[
+  {
+    "sample_id": "JAM-GH01-SMP-001",
+    "module_id": "GH-01",
+    "predicted_class": 0,
+    "confidence": 0.98,
+    "timestamp": "2026-06-02T08:30:00Z"
+  },
+  {
+    "sample_id": "JAM-GH01-SMP-002",
+    "module_id": "GH-01",
+    "predicted_class": 1,
+    "confidence": 0.85,
+    "timestamp": "2026-06-02T10:30:00Z"
+  },
+  {
+    "sample_id": "JAM-GH01-SMP-003",
+    "module_id": "GH-01",
+    "predicted_class": 2,
+    "confidence": 0.92,
+    "timestamp": "2026-06-02T12:30:00Z"
+  },
+  {
+    "sample_id": "JAM-GH02-SMP-001",
+    "module_id": "GH-02",
+    "predicted_class": 0,
+    "confidence": 0.99,
+    "timestamp": "2026-06-02T09:15:00Z"
+  }
+]
