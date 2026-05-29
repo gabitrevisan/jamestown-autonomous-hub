@@ -2,6 +2,11 @@
 
 Este repositório contém a lógica de treinamento da Rede Neural Convolucional (CNN) focada no diagnóstico botânico automatizado (identificação de fungos e estresse nas plantas) da base lunar Jamestown.
 
+## 📂 Organização deste Módulo
+
+* **`/notebooks`**: Contém o ambiente de Pesquisa & Desenvolvimento. Aqui está o Jupyter Notebook original (`GS_ACV.ipynb`) com a matemática, treinamento, gráficos de *loss* e matriz de confusão.
+* **Scripts `.py` raiz**: Versão refatorada para Produção. O arquivo `predict.py` analisa novas fotos e envia o diagnóstico (via JSON) automaticamente para o módulo de `big-data` deste repositório.
+
 ## ⚙️ Pré-Requisitos e Setup Local
 
 Para rodar a Inteligência Artificial na sua própria máquina sem o Google Colab:

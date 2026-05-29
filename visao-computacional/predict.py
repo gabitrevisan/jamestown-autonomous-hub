@@ -47,8 +47,10 @@ def predict_image(img_path, model_path='cnn_jamestown.keras'):
         "confidence": round(confidence, 4)
     }
     
-    # salva o JSON na mesma pasta (ou joga direto na pasta /data do Airflow)
-    with open('vision_diagnosis.json', 'w') as f:
+    caminho_destino = '../big-data/dags/vision_diagnosis.json'
+    # garante que a pasta de destino existe antes de salvar
+    os.makedirs(os.path.dirname(caminho_destino), exist_ok=True)
+    with open(caminho_destino, 'w') as f:
         json.dump(resultado, f, indent=4)
         
     print(f"\n--- DIAGNÓSTICO CONCLUÍDO ---")

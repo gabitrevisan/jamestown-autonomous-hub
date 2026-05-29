@@ -1,8 +1,6 @@
-# 👁️ Jamestown Hub - Módulo de Visão Computacional - Notebook (.ipynb)
+Este diretório contém os estudos acadêmicos e a prova científica do nosso modelo de Deep Learning. Para testar a rede neural interativamente, faça o upload do arquivo GS_ACV.ipynb no Google Colab e siga as instruções das células.
 
-Bem-vindo ao repositório de **Visão Computacional e Deep Learning** do projeto **Jamestown Hub** (Global Solution FIAP). 
-
-Este módulo é o responsável por ser os "olhos" da nossa estufa lunar simulada. Através de uma **Rede Neural Convolucional (CNN)**, o modelo analisa imagens capturadas das folhas das plantas hidropônicas e realiza diagnósticos autônomos de saúde e pragas, essenciais para a sobrevivência a longo prazo no espaço.
+Este módulo de Visão Computacional é o responsável por ser os "olhos" da nossa estufa lunar simulada. Através de uma **Rede Neural Convolucional (CNN)**, o modelo analisa imagens capturadas das folhas das plantas hidropônicas e realiza diagnósticos autônomos de saúde e pragas, essenciais para a sobrevivência a longo prazo no espaço.
 
 ## 🎯 Objetivo e Diagnósticos (Classes)
 O modelo foi treinado com o dataset PlantVillage (via Kaggle) e mapeado para agrupar doenças em três macro-categorias críticas de risco operacional:
