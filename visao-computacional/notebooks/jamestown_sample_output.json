@@ -1,0 +1,13 @@
+{
+  "sample_id": "JAM-GH01-SMP-0042",
+  "greenhouse_id": "GH-01",
+  "sector": "GH-01",
+  "predicted_class": 0,
+  "predicted_label": "estresse",
+  "leaf_status": "estresse",
+  "confidence": 1.0,
+  "model_version": "cnn_a_v1",
+  "model_name": "CNN_A_Leve",
+  "timestamp": "2026-05-27T03:14:23.064060+00:00",
+  "created_at": "2026-05-27T03:14:23.064080+00:00"
+}
