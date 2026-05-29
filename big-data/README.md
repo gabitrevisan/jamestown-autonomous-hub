@@ -2,6 +2,13 @@
 
 Este repositório contém a infraestrutura de Engenharia de Dados (Pipeline ETL) desenvolvida para a base lunar simulada **Jamestown Hub**. O projeto é responsável por orquestrar, tratar e armazenar dados vitais das estufas espaciais.
 
+## 👥 Equipe Desenvolvedora - 4ESPW
+* **Breno Silva** - *RM99275*
+* **Eduardo Araujo** - *RM99758*
+* **Gabriela Trevisan** - *RM99500*
+* **Gustavo Akio** - *RM550241*
+* **Rafael Franck** - *RM550875*
+
 ## 🏗️ Arquitetura do Projeto
 
 O fluxo de dados foi construído para simular um ambiente real de tomada de decisão em Missões Espaciais (Cyber-Physical System):
