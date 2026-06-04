@@ -1,6 +1,8 @@
-Este diretório contém os estudos acadêmicos e a prova científica do nosso modelo de Deep Learning. Para testar a rede neural interativamente, faça o upload do arquivo GS_ACV.ipynb no Google Colab e siga as instruções das células.
+# 📉 GS_ACV - Análise e Prova Científica
 
-Este módulo de Visão Computacional é o responsável por ser os "olhos" da nossa estufa lunar simulada. Através de uma **Rede Neural Convolucional (CNN)**, o modelo analisa imagens capturadas das folhas das plantas hidropônicas e realiza diagnósticos autônomos de saúde e pragas, essenciais para a sobrevivência a longo prazo no espaço.
+Este diretório contém os estudos acadêmicos e a prova científica do nosso modelo de Deep Learning; ele é responsável por ser os "olhos" da nossa estufa lunar simulada. Através de uma **Rede Neural Convolucional (CNN)**, o modelo analisa imagens capturadas das folhas das plantas hidropônicas e realiza diagnósticos autônomos de saúde e pragas, essenciais para a sobrevivência a longo prazo no espaço.
+
+Para testar a rede neural interativamente, faça o upload do arquivo GS_ACV.ipynb no Google Colab e siga as instruções das células.
 
 ## 👥 Equipe Desenvolvedora - 4ESPW
 * **Breno Silva** - *RM99275*
@@ -42,4 +44,4 @@ A forma mais rápida e recomendada de testar este modelo é através do Google C
 
 Este modelo de Deep Learning atua como a primeira camada de inteligência da base Jamestown. 
 
-Na arquitetura completa do projeto, o diagnóstico gerado por este notebook (o arquivo JSON) é consumido por nossa esteira de **Big Data (Apache Airflow)**. Lá, o status de saúde da planta é cruzado com métricas de Sensores IoT (Temperatura, Umidade, pH) e alertas de Clima Espacial (API da NASA), formando uma base de dados robusta para tomada de decisão do comandante e ação de robôs de contenção.
+Na arquitetura completa do projeto, o diagnóstico (gerado em arquivo JSON) é consumido por nossa esteira de **Big Data (Apache Airflow)**. Lá, o status de saúde da planta é cruzado com métricas de Sensores IoT (Temperatura, Umidade, pH) e alertas de Clima Espacial (API da NASA), formando uma base de dados robusta para tomada de decisão do comandante e ação de robôs de contenção.

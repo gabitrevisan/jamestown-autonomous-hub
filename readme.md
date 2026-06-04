@@ -1,6 +1,6 @@
 # 🚀 Jamestown Autonomous Hub
 
-Repositório oficial da equipe **Jamestown** para a Global Solution. Este projeto simula o sistema nervoso central (Cyber-Physical System) de uma base lunar botânica, integrando IA, Dados, Robótica e Software.
+Bem-vindo ao centro de operações da Base Jamestown. Este projeto é um **Sistema Ciberfísico (CPS)** que integra Visão Computacional, Big Data, IA Generativa e Automação para o monitoramento botânico autônomo em ambientes espaciais.
 
 ## 👥 Equipe Desenvolvedora - 4ESPW
 * **Breno Silva** - *RM99275*
@@ -9,10 +9,19 @@ Repositório oficial da equipe **Jamestown** para a Global Solution. Este projet
 * **Gustavo Akio** - *RM550241*
 * **Rafael Franck** - *RM550875*
 
-## 🧠 Arquitetura e Integração
+## 🏗️ Arquitetura do Sistema
+O sistema foi desenhado como um ecossistema integrado:
+1. **Visão Computacional:** Diagnóstico de plantas via CNN e exportação de status.
+2. **Big Data:** Orquestração via Apache Airflow, consolidando dados de sensores e visão.
+3. **GenAI:** Assistente autônomo integrado aos dados da estufa.
+4. **Maker Lab:** Protótipo físico de hardware (Arduino).
+5. **SecDevOps & RPA:** Pipeline de CI/CD e automação de tarefas administrativas.
 
-O ecossistema funciona em cadeia:
-1. **Visão Computacional (`/visao-computacional`):** Analisa fotos da estufa e gera um diagnóstico botânico.
-2. **Big Data (`/big-data`):** O Apache Airflow captura o diagnóstico, cruza com dados de IoT e alertas de radiação espacial da NASA, consolidando tudo no Oracle.
-
-> Navegue pelas pastas acima para ver as documentações específicas de execução de cada módulo.
+## 📂 Documentação por Módulo
+Para detalhes de execução, acesse o `README.md` dentro de cada pasta:
+- [Visão Computacional](./visao-computacional/README.md)
+- [Big Data](./big-data/README.md)
+- [Inteligência Artificial](./gen-ai-for-eng/README.md)
+- [Maker Lab](./maker-lab/README.md)
+- [DevOps](./secure-devops/README.md)
+- [RPA](./rpa/README.md)

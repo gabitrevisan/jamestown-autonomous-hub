@@ -1,4 +1,6 @@
-# 🛰️ Jamestown Hub - Robotic Process Automation
+# 🤖 RPA - Automação de Processos
+
+Automação focada em tarefas repetitivas de administração e logística da base lunar.
 
 ## 👥 Equipe Desenvolvedora - 4ESPW
 * **Breno Silva** - *RM99275*

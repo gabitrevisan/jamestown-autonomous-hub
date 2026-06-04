@@ -18,7 +18,7 @@ def main():
     model = build_model()
     model.summary()
 
-    # 3. Execução
+    # 3. execução
     train_and_save(model, train_gen, val_gen)
 
 if __name__ == '__main__':
