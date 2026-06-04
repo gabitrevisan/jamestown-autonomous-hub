@@ -22,7 +22,7 @@ with DAG('jamestown_mission_pipeline', default_args=default_args, schedule_inter
     def extract_and_transform(**kwargs):
         # 1. LER ARQUIVOS LOCAIS (CSV E JSON)
         df_tel = pd.read_csv(TELEMETRY_FILE)
-        df_vis = pd.read_json(VISION_FILE)
+        df_vis = pd.read_json(VISION_FILE, orient='index').T
         
         # 2. LER API DA NASA (DONKI - Clima Espacial Real)
         # usando a data de quando a V1 do projeto foi criada como parâmetro

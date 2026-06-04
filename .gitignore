@@ -1,0 +1,39 @@
+# --- Python / Ambientes Virtuais ---
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+.env
+
+# --- Modelos de IA e Datasets (Pesados) ---
+*.h5
+*.keras
+*.pickle
+*.joblib
+dataset/
+downloads/
+
+# --- Docker / Airflow ---
+# Ignora logs e dados persistentes do Airflow
+logs/
+airflow.db
+*.log
+airflow-webserver.pid
+airflow-scheduler.pid
+airflow-worker.pid
+
+# --- Node.js / Secure DevOps ---
+node_modules/
+npm-debug.log
+
+# --- Arquivos de Sistema e IDE ---
+.vscode/
+.DS_Store
+Thumbs.db
+
+# --- Senhas e Segredos (Segurança Máxima) ---
+*.env
+.env.*
+! .env.example
