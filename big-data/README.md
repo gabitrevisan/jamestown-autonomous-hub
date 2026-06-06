@@ -1,6 +1,6 @@
-# 📊 Big Data - Pipeline de Telemetria
+# 📊 Big Data - Pipeline de Telemetria e Integração Jamestown
 
-Orquestração de dados da base lunar utilizando Apache Airflow, PostgreSQL e Redis.
+Este módulo é o coração analítico do projeto, responsável pela ingestão, processamento e persistência dos dados de telemetria da estufa e dos diagnósticos gerados pela Visão Computacional.
 
 ## 👥 Equipe Desenvolvedora - 4ESPW
 * **Breno Silva** - *RM99275*
@@ -9,16 +9,34 @@ Orquestração de dados da base lunar utilizando Apache Airflow, PostgreSQL e Re
 * **Gustavo Akio** - *RM550241*
 * **Rafael Franck** - *RM550875*
 
-## 🏗️ Arquitetura de Pipeline
-Este pipeline ingere dados de sensores IoT, o JSON gerado pela Visão Computacional e monitora alertas climáticos da API da NASA.
+## 🏗️ Arquitetura do Pipeline (ETL)
+O fluxo de dados foi desenhado para ser resiliente e automatizado:
+1. **Extração (E):** Ingestão de telemetria bruta via CSV (`telemetry_greenhouse.csv`) e diagnósticos de pragas via JSON (`vision_diagnosis.json`).
+2. **Transformação (T):** Utilização de Pandas para realizar a limpeza, tratamento de valores nulos e merge entre os dados de sensores IoT e o status da planta (CNN).
+3. **Carga (L):** Persistência dos dados consolidados no banco de dados relacional **Oracle** (servidor FIAP), garantindo a integridade histórica.
 
-## 🔄 Fluxo de Dados (ETL)
-1. **Extract:** Leitura de sensores locais (`telemetry_greenhouse.csv`) e do output de Visão Computacional (`vision_diagnosis.json`).
-2. **Transform:** Limpeza de nulos e mesclagem do diagnóstico da planta usando `pandas`.
-3. **Load:** Inserção dos dados consolidados no banco de dados relacional **Oracle** através de conexão via `OracleHook`.
+
+
+## 🛠️ Tecnologias Utilizadas
+* **Orquestração:** Apache Airflow.
+* **Processamento:** Python (Pandas).
+* **Infraestrutura:** Docker e Docker Compose.
+* **Banco de Dados:** Oracle SQL (persistência final).
 
 ## 🚀 Como Executar
-1. Garanta que o Docker Desktop esteja em execução.
-2. Na pasta raiz deste módulo, suba o ambiente: `docker compose up -d`
-3. Acompanhe a orquestração: Acesse `http://localhost:8081` (Usuário: `airflow` / Senha: `airflow`).
-4. **Configuração:** Em *Admin > Connections*, crie a conexão `oracle_fiap` para persistência dos dados.
+1. **Setup:** Garanta que o Docker Desktop esteja em execução.
+2. **Ambiente:** Na pasta `big-data/`, suba os serviços:
+   ```bash
+   docker compose up -d
+   ```
+
+3. **Orquestração:** Acesse o painel do Airflow em http://localhost:8081.
+- Usuário/Senha: airflow.
+- Ative a DAG jamestown_mission_pipeline para iniciar o fluxo ETL.
+4. **Verificação:** Consulte a tabela FACT_JAMESTOWN_DATA no Oracle para validar a carga.
+
+## 📈 Validação de Dados
+Os dados processados são auditados via SQL para garantir a integridade da Estufa Lunar. Consultas analíticas (incluindo cruzamento com alertas da NASA) estão disponíveis no arquivo `schema.sql`.
+
+## 🖼️ Evidências de Funcionamento
+As evidências de execução da pipeline e a persistência no banco de dados encontram-se na pasta `evidencias/`.
