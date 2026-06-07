@@ -97,22 +97,23 @@ pip install pandas numpy scikit-learn xgboost imbalanced-learn shap streamlit jo
 
 ### Executando o Painel de Telemetria Localmente
 1. Clone este repositório:
-git clonegit clone https://github.com/gabitrevisan/jamestown-autonomous-hub.git
+   
+2. git clone https://github.com/gabitrevisan/jamestown-autonomous-hub.git
 
-2. cd gen-ai-for-eng
+3. cd gen-ai-for-eng
 
-3. Certifique-se de que o arquivo best_jamestown_model.pkl está na mesma pasta do script app.py.
+4. Certifique-se de que o arquivo best_jamestown_model.pkl está na mesma pasta do script app.py.
 
-4. Inicie a aplicação web do Streamlit:
+5. Inicie a aplicação web do Streamlit:
 streamlit run app.py
 
 ---
 
 ## 🔗 7. Links da Aplicação
 * Link do Repositório (GitHub): https://github.com/gabitrevisan/jamestown-autonomous-hub/tree/main/gen-ai-for-eng
-* Link da Aplicação em Funcionamento: 
+* Link da Aplicação em Funcionamento: https://ia-genipynb-x9redr3wnfqgqq7xnhmd5b.streamlit.app/
 
-## 8. Requeriments 
+## 8. Requirements 
 
 pandas
 numpy
