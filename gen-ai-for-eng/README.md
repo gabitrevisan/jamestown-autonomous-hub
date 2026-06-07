@@ -71,6 +71,8 @@ Em sistemas críticos aeroespaciais de suporte à vida, a métrica mais importan
 
 O modelo Random Forest, apesar de possuir uma acurácia geral inflada (95.83%), obteve Recall nulo (0.00%), ignorando os cenários de falha reais. Já o XGBoost Classifier, calibrado com o hiperparâmetro scale_pos_weight baseado na proporção real de desbalanceamento, conseguiu capturar 50.00% das anomalias severas. Optou-se formalmente pelo XGBoost, aceitando uma taxa maior de falsos alarmes operacionais em troca do aumento drástico na segurança física da tripulação.
 
+Apesar da baixa precisão, em ambientes aeroespaciais a detecção antecipada de falhas é mais importante do que a geração de alarmes adicionais.
+
 ---
 
 ## 🔍 5. Interpretação com SHAP
@@ -96,7 +98,9 @@ pip install pandas numpy scikit-learn xgboost imbalanced-learn shap streamlit jo
 ### Executando o Painel de Telemetria Localmente
 1. Clone este repositório:
 git clonegit clone https://github.com/gabitrevisan/jamestown-autonomous-hub.git
-cd gen-ai-for-eng
+
+2. cd gen-ai-for-eng
+
 3. Certifique-se de que o arquivo best_jamestown_model.pkl está na mesma pasta do script app.py.
 
 4. Inicie a aplicação web do Streamlit:
@@ -108,3 +112,14 @@ streamlit run app.py
 * Link do Repositório (GitHub): https://github.com/gabitrevisan/jamestown-autonomous-hub/tree/main/gen-ai-for-eng
 * Link da Aplicação em Funcionamento: 
 
+## 8. Requeriments 
+
+pandas
+numpy
+scikit-learn
+xgboost
+imbalanced-learn
+shap
+streamlit
+joblib
+matplotlib
