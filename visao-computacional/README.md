@@ -17,3 +17,6 @@ Módulo responsável pela classificação de saúde das plantas da Estufa Jamest
 2. **Treinamento:** Execute `python main.py` para treinar a CNN.
 3. **Inferência:** Utilize `python predict.py <caminho_da_imagem>` para diagnosticar uma planta. 
    - *O resultado é gerado automaticamente em `../big-data/dags/vision_diagnosis.json` para integração com o pipeline de Big Data.*
+
+## 📺 Vídeo Demonstrativo
+https://youtu.be/Dhiv3YVd_6A?si=TT6szsZyN2IkYUv6

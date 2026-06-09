@@ -45,3 +45,6 @@ A forma mais rápida e recomendada de testar este modelo é através do Google C
 Este modelo de Deep Learning atua como a primeira camada de inteligência da base Jamestown. 
 
 Na arquitetura completa do projeto, o diagnóstico (gerado em arquivo JSON) é consumido por nossa esteira de **Big Data (Apache Airflow)**. Lá, o status de saúde da planta é cruzado com métricas de Sensores IoT (Temperatura, Umidade, pH) e alertas de Clima Espacial (API da NASA), formando uma base de dados robusta para tomada de decisão do comandante e ação de robôs de contenção.
+
+## 📺 Vídeo Demonstrativo
+https://youtu.be/Dhiv3YVd_6A?si=TT6szsZyN2IkYUv6

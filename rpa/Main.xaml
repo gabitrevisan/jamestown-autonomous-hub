@@ -1,0 +1,361 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:uga="clr-namespace:UiPath.GSuite.Activities;assembly=UiPath.GSuite.Activities" xmlns:ugade="clr-namespace:UiPath.GSuite.Activities.Drive.Enums;assembly=UiPath.GSuite.Activities" xmlns:ugage="clr-namespace:UiPath.GSuite.Activities.Gmail.Enums;assembly=UiPath.GSuite.Activities" xmlns:ugam="clr-namespace:UiPath.GSuite.Activities.Models;assembly=UiPath.GSuite.Activities" xmlns:ugase="clr-namespace:UiPath.GSuite.Activities.Sheets.Enums;assembly=UiPath.GSuite.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:upr="clr-namespace:UiPath.Platform.ResourceHandling;assembly=UiPath.Platform" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.GSuite.Activities" xmlns:uwahm="clr-namespace:UiPath.Web.Activities.Http.Models;assembly=UiPath.Web.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Web.Activities.JSON.Models</x:String>
+      <x:String>Newtonsoft.Json.Linq</x:String>
+      <x:String>Newtonsoft.Json</x:String>
+      <x:String>System.Dynamic</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Collections.Specialized</x:String>
+      <x:String>UiPath.Web.Activities</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.GSuite.Activities.Drive.Enums</x:String>
+      <x:String>UiPath.Shared.Activities.Utils</x:String>
+      <x:String>UiPath.GSuite.Drive.Models</x:String>
+      <x:String>UiPath.GSuite.Activities.Models</x:String>
+      <x:String>UiPath.GSuite.Activities.Sheets.Enums</x:String>
+      <x:String>UiPath.GSuite.Sheets.Contracts</x:String>
+      <x:String>UiPath.GSuite.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.GSuite.Activities.Gmail.Enums</x:String>
+      <x:String>UiPath.Web.Activities.Http.Models</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Net</x:String>
+      <x:String>UiPath.Web.Activities.Http</x:String>
+      <x:String>UiPath.Sdk.Activities</x:String>
+      <x:String>UiPath.Sdk.Activities.DependencyInjection.Contracts</x:String>
+      <x:String>UiPath.Sdk.Activities.DependencyInjection</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.MetadataLoadContext</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>Newtonsoft.Json</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Collections.Specialized</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Net.WebClient</AssemblyReference>
+      <AssemblyReference>System.Net.Primitives</AssemblyReference>
+      <AssemblyReference>System.Net.HttpListener</AssemblyReference>
+      <AssemblyReference>System.Net.WebProxy</AssemblyReference>
+      <AssemblyReference>System.Net.NameResolution</AssemblyReference>
+      <AssemblyReference>System.Net.WebHeaderCollection</AssemblyReference>
+      <AssemblyReference>System.Net.Requests</AssemblyReference>
+      <AssemblyReference>System.Net.ServicePoint</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
+      <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1493.2,4008.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="uwahm:HttpResponseSummary" Name="respostaAPI" />
+      <Variable x:TypeArguments="x:String" Name="acaoRecomendada" />
+      <Variable x:TypeArguments="x:String" Name="sector" />
+      <Variable x:TypeArguments="x:String" Name="sampleId" />
+      <Variable x:TypeArguments="x:String" Name="leafStatus" />
+      <Variable x:TypeArguments="sd:DataTable" Name="tabelaDeDados">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:String x:Key="SourceIdRef">BuildDataTable_1</x:String>
+            <x:String x:Key="SourcePropertyName">DataTable</x:String>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </Variable>
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:InvokeCode ContinueOnError="{x:Null}" Code="Try&#xA;    Dim client As New System.Net.WebClient&#xA;    client.Headers.Add(&quot;ngrok-skip-browser-warning&quot;, &quot;true&quot;)&#xA;    Dim resposta As String = client.DownloadString(&quot;https://untimely-passivism-bok.ngrok-free.dev/api/diagnostico&quot;)&#xA;    Dim json = Newtonsoft.Json.Linq.JObject.Parse(resposta)&#xA;    leafStatus = json(&quot;leaf_status&quot;).ToString()&#xA;    sampleId = json(&quot;sample_id&quot;).ToString()&#xA;    sector = json(&quot;sector&quot;).ToString()&#xA;    acaoRecomendada = json(&quot;recommended_action&quot;).ToString()&#xA;Catch ex As Exception&#xA;    leafStatus = &quot;erro&quot;&#xA;    sampleId = &quot;erro&quot;&#xA;    sector = &quot;erro&quot;&#xA;    acaoRecomendada = &quot;erro&quot;&#xA;    Console.WriteLine(&quot;Erro: &quot; &amp; ex.Message)&#xA;End Try" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="488,196.8" sap2010:WorkflowViewState.IdRef="InvokeCode_2">
+      <ui:InvokeCode.Arguments>
+        <OutArgument x:TypeArguments="x:String" x:Key="leafStatus">[leafStatus]</OutArgument>
+        <OutArgument x:TypeArguments="x:String" x:Key="sampleId">[sampleId]</OutArgument>
+        <OutArgument x:TypeArguments="x:String" x:Key="sector">[sector]</OutArgument>
+        <OutArgument x:TypeArguments="x:String" x:Key="acaoRecomendada">[acaoRecomendada]</OutArgument>
+      </ui:InvokeCode.Arguments>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:InvokeCode>
+    <If Condition="[leafStatus = &quot;fungo_patogeno&quot;]" sap:VirtualizedContainerService.HintSize="488,3788.8" sap2010:WorkflowViewState.IdRef="If_1">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <If.Then>
+        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="486.4,1292.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="452.8,122.4" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[&quot;[JAMESTOWN ALERT] Fungo detectado! Sample: &quot; &amp; sampleId &amp; &quot; | Setor: &quot; &amp; sector &amp; &quot; | Ação: &quot; &amp; acaoRecomendada]" />
+          <ui:BuildDataTable DataTable="[tabelaDeDados]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="452,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;incident_id&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;module_id&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;severity&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;detected_issue&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;recommended_action&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;opened_at&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+          <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{&quot;INC-&quot; &amp; sector &amp; &quot;-&quot; &amp; Now.ToString(&quot;yyyyMMddHHmmss&quot;), sector, &quot;Crítico&quot;, &quot;Fungo / Patógeno&quot;, acaoRecomendada, Now.ToString(&quot;yyyy-MM-dd HH:mm:ss&quot;)}]" DataTable="[tabelaDeDados]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="452.8,220" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
+          <uga:WriteRangeConnections ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ManualEntrySpreadsheetId="{x:Null}" Spreadsheet="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" AuthScopesInvalid="False" BrowserItemFriendlyName="Jamestown - Incidentes RPA" BrowserItemId="https://docs.google.com/spreadsheets/d/1CPq01shMylG4EGZXPFuo8joPfaStnLs6n06bxrUcvKA/edit?usp=drivesdk" ConnectionId="34a0afee-58c7-44fe-b2ad-80870216c9e8" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="452,394" sap2010:WorkflowViewState.IdRef="WriteRangeConnections_1" IncludeHeaders="False" ItemSelectionMode="Browse" Range="Página1" RowPosition="0" Source="[tabelaDeDados]" UseConnectionService="True" WorkingWithTemplateSpreadsheet="False" WriteMode="Append">
+            <uga:WriteRangeConnections.FileIdBackup>
+              <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID0" StoredValue="Browse">
+                <usau:BackupSlot.BackupValues>
+                  <scg:Dictionary x:TypeArguments="ugade:EDriveItemMode, scg:List(x:Object)" />
+                </usau:BackupSlot.BackupValues>
+              </usau:BackupSlot>
+            </uga:WriteRangeConnections.FileIdBackup>
+            <uga:WriteRangeConnections.Item>
+              <ugam:DriveItemArgument Backup="{x:Reference __ReferenceID0}" ConnectionDescriptor="{x:Null}" ConnectionKey="{x:Null}" Existing="{x:Null}" FullPath="{x:Null}" IdOrUrl="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" BrowserId="https://docs.google.com/spreadsheets/d/1CPq01shMylG4EGZXPFuo8joPfaStnLs6n06bxrUcvKA/edit?usp=drivesdk" FriendlyName="Jamestown - Incidentes RPA" FullPathHint="My Drive/Jamestown - Incidentes RPA" InputMode="Browse">
+                <ugam:DriveItemArgument.DriveId>
+                  <InArgument x:TypeArguments="x:String" />
+                </ugam:DriveItemArgument.DriveId>
+                <ugam:DriveItemArgument.ParentIdFullPathHint>
+                  <InArgument x:TypeArguments="x:String">
+                    <Literal x:TypeArguments="x:String" Value="" />
+                  </InArgument>
+                </ugam:DriveItemArgument.ParentIdFullPathHint>
+              </ugam:DriveItemArgument>
+            </uga:WriteRangeConnections.Item>
+            <uga:WriteRangeConnections.RangeWriteModeBackup>
+              <usau:BackupSlot x:TypeArguments="ugase:RangeWriteMode" StoredValue="Append">
+                <usau:BackupSlot.BackupValues>
+                  <scg:List x:TypeArguments="x:Object" x:Key="Overwrite" Capacity="1">
+                    <x:String></x:String>
+                  </scg:List>
+                </usau:BackupSlot.BackupValues>
+              </usau:BackupSlot>
+            </uga:WriteRangeConnections.RangeWriteModeBackup>
+          </uga:WriteRangeConnections>
+          <uga:SendEmailConnections ArgumentAttachmentPaths="{x:Null}" ArgumentAttachments="{x:Null}" AttachmentPaths="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ReplyTo="{x:Null}" SingleAttachment="{x:Null}" TextBody="{x:Null}" AttachmentInputMode="UseExisting" AuthScopesInvalid="False" Body="[&quot;🔴 ALERTA CRÍTICO - Jamestown Autonomous Hub&quot; &amp; Environment.NewLine &amp; Environment.NewLine &amp; &quot;Um fungo/patógeno foi detectado na estufa orbital.&quot; &amp; Environment.NewLine &amp; Environment.NewLine &amp; &quot;📋 DETALHES DO INCIDENTE&quot; &amp; Environment.NewLine &amp; &quot;Sample ID: &quot; &amp; sampleId &amp; Environment.NewLine &amp; &quot;Setor: &quot; &amp; sector &amp; Environment.NewLine &amp; &quot;Diagnóstico: FUNGO / PATÓGENO DETECTADO&quot; &amp; Environment.NewLine &amp; &quot;Confiança: Alta&quot; &amp; Environment.NewLine &amp; Environment.NewLine &amp; &quot;⚠️ AÇÃO REQUERIDA&quot; &amp; Environment.NewLine &amp; acaoRecomendada &amp; Environment.NewLine &amp; Environment.NewLine &amp; &quot;🕐 Timestamp: &quot; &amp; Now.ToString(&quot;yyyy-MM-dd HH:mm:ss&quot;) &amp; Environment.NewLine &amp; Environment.NewLine &amp; &quot;— Jamestown Autonomous Hub | RPA Contingency Bot&quot;]" ConnectionId="0358430f-7182-4250-9a87-12682d84bc9b" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="452,405" sap2010:WorkflowViewState.IdRef="SendEmailConnections_1" Importance="Normal" InputType="HTML" SaveAsDraft="False" Subject="[&quot;[JAMESTOWN ALERT] Fungo detectado no setor &quot; &amp; sector]" To="[New String(){&quot;rafael.pedra.franck@gmail.com&quot;}]" UseConnectionService="True">
+            <uga:SendEmailConnections.Attachments>
+              <InArgument x:TypeArguments="scg:IEnumerable(upr:IResource)" />
+            </uga:SendEmailConnections.Attachments>
+            <uga:SendEmailConnections.AttachmentsBackup>
+              <usau:BackupSlot x:TypeArguments="ugage:AttachmentInputMode" StoredValue="UseExisting">
+                <usau:BackupSlot.BackupValues>
+                  <scg:Dictionary x:TypeArguments="ugage:AttachmentInputMode, scg:List(x:Object)" />
+                </usau:BackupSlot.BackupValues>
+              </usau:BackupSlot>
+            </uga:SendEmailConnections.AttachmentsBackup>
+            <uga:SendEmailConnections.InputTypeBackup>
+              <usau:BackupSlot x:TypeArguments="ugage:BodyInputType" StoredValue="HTML">
+                <usau:BackupSlot.BackupValues>
+                  <scg:Dictionary x:TypeArguments="ugage:BodyInputType, scg:List(x:Object)" />
+                </usau:BackupSlot.BackupValues>
+              </usau:BackupSlot>
+            </uga:SendEmailConnections.InputTypeBackup>
+          </uga:SendEmailConnections>
+        </Sequence>
+      </If.Then>
+      <If.Else>
+        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="486,2366" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <If Condition="[leafStatus = &quot;estresse&quot;]" sap:VirtualizedContainerService.HintSize="452,2306" sap2010:WorkflowViewState.IdRef="If_2">
+            <If.Then>
+              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,1295" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="416,123" sap2010:WorkflowViewState.IdRef="WriteLine_4" Text="[&quot;[JAMESTOWN WARNING] Estresse detectado! Sample: &quot; &amp; sampleId &amp; &quot; | Setor: &quot; &amp; sector]" />
+                <ui:BuildDataTable DataTable="[tabelaDeDados]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="416,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_3" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;incident_id&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;module_id&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;severity&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;detected_issue&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;recommended_action&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;opened_at&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:BuildDataTable>
+                <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{&quot;INC-&quot; &amp; sector &amp; &quot;-&quot; &amp; Now.ToString(&quot;yyyyMMddHHmmss&quot;), sector, &quot;Warning&quot;, leafStatus, acaoRecomendada, Now.ToString(&quot;yyyy-MM-dd HH:mm:ss&quot;)}]" DataTable="[tabelaDeDados]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="416,221" sap2010:WorkflowViewState.IdRef="AddDataRow_3" />
+                <uga:WriteRangeConnections ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ManualEntrySpreadsheetId="{x:Null}" Spreadsheet="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" AuthScopesInvalid="False" BrowserItemFriendlyName="Jamestown - Incidentes RPA" BrowserItemId="https://docs.google.com/spreadsheets/d/1CPq01shMylG4EGZXPFuo8joPfaStnLs6n06bxrUcvKA/edit?usp=drivesdk" ConnectionId="34a0afee-58c7-44fe-b2ad-80870216c9e8" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="416,394" sap2010:WorkflowViewState.IdRef="WriteRangeConnections_5" IncludeHeaders="False" ItemSelectionMode="Browse" Range="Página1" RowPosition="0" Source="[tabelaDeDados]" UseConnectionService="True" WorkingWithTemplateSpreadsheet="False" WriteMode="Append">
+                  <uga:WriteRangeConnections.FileIdBackup>
+                    <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID1" StoredValue="Browse">
+                      <usau:BackupSlot.BackupValues>
+                        <scg:Dictionary x:TypeArguments="ugade:EDriveItemMode, scg:List(x:Object)" />
+                      </usau:BackupSlot.BackupValues>
+                    </usau:BackupSlot>
+                  </uga:WriteRangeConnections.FileIdBackup>
+                  <uga:WriteRangeConnections.Item>
+                    <ugam:DriveItemArgument Backup="{x:Reference __ReferenceID1}" ConnectionDescriptor="{x:Null}" ConnectionKey="{x:Null}" Existing="{x:Null}" FullPath="{x:Null}" IdOrUrl="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" BrowserId="https://docs.google.com/spreadsheets/d/1CPq01shMylG4EGZXPFuo8joPfaStnLs6n06bxrUcvKA/edit?usp=drivesdk" FriendlyName="Jamestown - Incidentes RPA" FullPathHint="My Drive/Jamestown - Incidentes RPA" InputMode="Browse">
+                      <ugam:DriveItemArgument.DriveId>
+                        <InArgument x:TypeArguments="x:String" />
+                      </ugam:DriveItemArgument.DriveId>
+                      <ugam:DriveItemArgument.ParentIdFullPathHint>
+                        <InArgument x:TypeArguments="x:String">
+                          <Literal x:TypeArguments="x:String" Value="" />
+                        </InArgument>
+                      </ugam:DriveItemArgument.ParentIdFullPathHint>
+                    </ugam:DriveItemArgument>
+                  </uga:WriteRangeConnections.Item>
+                  <uga:WriteRangeConnections.RangeWriteModeBackup>
+                    <usau:BackupSlot x:TypeArguments="ugase:RangeWriteMode" StoredValue="Append">
+                      <usau:BackupSlot.BackupValues>
+                        <scg:List x:TypeArguments="x:Object" x:Key="Overwrite" Capacity="1">
+                          <x:String></x:String>
+                        </scg:List>
+                      </usau:BackupSlot.BackupValues>
+                    </usau:BackupSlot>
+                  </uga:WriteRangeConnections.RangeWriteModeBackup>
+                </uga:WriteRangeConnections>
+                <uga:SendEmailConnections ArgumentAttachmentPaths="{x:Null}" ArgumentAttachments="{x:Null}" AttachmentPaths="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ReplyTo="{x:Null}" SingleAttachment="{x:Null}" TextBody="{x:Null}" AttachmentInputMode="UseExisting" AuthScopesInvalid="False" Body="[&quot;⚠️ ALERTA DE ATENÇÃO - Jamestown Autonomous Hub&quot; &amp; Environment.NewLine &amp; Environment.NewLine &amp; &quot;Estresse hídrico/nutricional detectado na estufa orbital.&quot; &amp; Environment.NewLine &amp; Environment.NewLine &amp; &quot;📋 DETALHES DO INCIDENTE&quot; &amp; Environment.NewLine &amp; &quot;Sample ID: &quot; &amp; sampleId &amp; Environment.NewLine &amp; &quot;Setor: &quot; &amp; sector &amp; Environment.NewLine &amp; &quot;Diagnóstico: ESTRESSE HÍDRICO / NUTRICIONAL&quot; &amp; Environment.NewLine &amp; Environment.NewLine &amp; &quot;⚠️ AÇÃO REQUERIDA&quot; &amp; Environment.NewLine &amp; acaoRecomendada &amp; Environment.NewLine &amp; Environment.NewLine &amp; &quot;🕐 Timestamp: &quot; &amp; Now.ToString(&quot;yyyy-MM-dd HH:mm:ss&quot;) &amp; Environment.NewLine &amp; Environment.NewLine &amp; &quot;— Jamestown Autonomous Hub | RPA Contingency Bot&quot;]" ConnectionId="0358430f-7182-4250-9a87-12682d84bc9b" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="416,405" sap2010:WorkflowViewState.IdRef="SendEmailConnections_2" Importance="Normal" InputType="HTML" SaveAsDraft="False" Subject="[&quot;[JAMESTOWN WARNING] Estresse detectado no setor &quot; &amp; sector]" To="[New String(){&quot;rafael.pedra.franck@gmail.com&quot;}]" UseConnectionService="True">
+                  <uga:SendEmailConnections.Attachments>
+                    <InArgument x:TypeArguments="scg:IEnumerable(upr:IResource)" />
+                  </uga:SendEmailConnections.Attachments>
+                  <uga:SendEmailConnections.AttachmentsBackup>
+                    <usau:BackupSlot x:TypeArguments="ugage:AttachmentInputMode" StoredValue="UseExisting">
+                      <usau:BackupSlot.BackupValues>
+                        <scg:Dictionary x:TypeArguments="ugage:AttachmentInputMode, scg:List(x:Object)" />
+                      </usau:BackupSlot.BackupValues>
+                    </usau:BackupSlot>
+                  </uga:SendEmailConnections.AttachmentsBackup>
+                  <uga:SendEmailConnections.InputTypeBackup>
+                    <usau:BackupSlot x:TypeArguments="ugage:BodyInputType" StoredValue="HTML">
+                      <usau:BackupSlot.BackupValues>
+                        <scg:Dictionary x:TypeArguments="ugage:BodyInputType, scg:List(x:Object)" />
+                      </usau:BackupSlot.BackupValues>
+                    </usau:BackupSlot>
+                  </uga:SendEmailConnections.InputTypeBackup>
+                </uga:SendEmailConnections>
+              </Sequence>
+            </If.Then>
+            <If.Else>
+              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,881" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="416,123" sap2010:WorkflowViewState.IdRef="WriteLine_3" Text="[&quot;[JAMESTOWN] Status: SAUDAVEL | Setor: &quot; &amp; sector &amp; &quot; | Nenhuma ação necessária.&quot;]" />
+                <ui:BuildDataTable DataTable="[tabelaDeDados]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="416,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_2" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;incident_id&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;module_id&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;severity&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;detected_issue&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;recommended_action&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;opened_at&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+                <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{&quot;INC-&quot; &amp; sector &amp; &quot;-&quot; &amp; Now.ToString(&quot;yyyyMMddHHmmss&quot;), sector, &quot;Normal&quot;, &quot;Saudável&quot;, &quot;Nenhuma ação necessária&quot;, Now.ToString(&quot;yyyy-MM-dd HH:mm:ss&quot;)}]" DataTable="[tabelaDeDados]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="416,221" sap2010:WorkflowViewState.IdRef="AddDataRow_2" />
+                <uga:WriteRangeConnections ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ManualEntrySpreadsheetId="{x:Null}" Spreadsheet="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" AuthScopesInvalid="False" BrowserItemFriendlyName="Jamestown - Incidentes RPA" BrowserItemId="https://docs.google.com/spreadsheets/d/1CPq01shMylG4EGZXPFuo8joPfaStnLs6n06bxrUcvKA/edit?usp=drivesdk" ConnectionId="34a0afee-58c7-44fe-b2ad-80870216c9e8" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="416,385" sap2010:WorkflowViewState.IdRef="WriteRangeConnections_2" IncludeHeaders="False" ItemSelectionMode="Browse" Range="Página1" RowPosition="0" Source="[tabelaDeDados]" UseConnectionService="True" WorkingWithTemplateSpreadsheet="False" WriteMode="Append">
+                  <uga:WriteRangeConnections.FileIdBackup>
+                    <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID2" StoredValue="Browse">
+                      <usau:BackupSlot.BackupValues>
+                        <scg:Dictionary x:TypeArguments="ugade:EDriveItemMode, scg:List(x:Object)" />
+                      </usau:BackupSlot.BackupValues>
+                    </usau:BackupSlot>
+                  </uga:WriteRangeConnections.FileIdBackup>
+                  <uga:WriteRangeConnections.Item>
+                    <ugam:DriveItemArgument Backup="{x:Reference __ReferenceID2}" ConnectionDescriptor="{x:Null}" ConnectionKey="{x:Null}" Existing="{x:Null}" FullPath="{x:Null}" IdOrUrl="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" BrowserId="https://docs.google.com/spreadsheets/d/1CPq01shMylG4EGZXPFuo8joPfaStnLs6n06bxrUcvKA/edit?usp=drivesdk" FriendlyName="Jamestown - Incidentes RPA" FullPathHint="My Drive/Jamestown - Incidentes RPA" InputMode="Browse">
+                      <ugam:DriveItemArgument.DriveId>
+                        <InArgument x:TypeArguments="x:String" />
+                      </ugam:DriveItemArgument.DriveId>
+                      <ugam:DriveItemArgument.ParentIdFullPathHint>
+                        <InArgument x:TypeArguments="x:String">
+                          <Literal x:TypeArguments="x:String" Value="" />
+                        </InArgument>
+                      </ugam:DriveItemArgument.ParentIdFullPathHint>
+                    </ugam:DriveItemArgument>
+                  </uga:WriteRangeConnections.Item>
+                  <uga:WriteRangeConnections.RangeWriteModeBackup>
+                    <usau:BackupSlot x:TypeArguments="ugase:RangeWriteMode" StoredValue="Append">
+                      <usau:BackupSlot.BackupValues>
+                        <scg:List x:TypeArguments="x:Object" x:Key="Overwrite" Capacity="1">
+                          <x:String></x:String>
+                        </scg:List>
+                      </usau:BackupSlot.BackupValues>
+                    </usau:BackupSlot>
+                  </uga:WriteRangeConnections.RangeWriteModeBackup>
+                </uga:WriteRangeConnections>
+              </Sequence>
+            </If.Else>
+          </If>
+        </Sequence>
+      </If.Else>
+    </If>
+  </Sequence>
+</Activity>

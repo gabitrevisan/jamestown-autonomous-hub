@@ -1,0 +1,6 @@
+{
+  "Name": "Jamestown_RPA",
+  "ProjectType": "Process",
+  "Description": "Bot de contingência Jamestown Autonomous Hub",
+  "MainFile": "Main.xaml"
+}

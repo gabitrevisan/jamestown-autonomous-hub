@@ -1,0 +1,12 @@
+{
+  "sample_id": "JAM-GH01-SMP-0046",
+  "greenhouse_id": "GH-01",
+  "sector": "GH-01",
+  "predicted_class": 0,
+  "predicted_label": "estresse",
+  "leaf_status": "estresse",
+  "confidence": 0.9498,
+  "model_version": "cnn_a_v1",
+  "timestamp": "2026-06-04T17:35:00Z",
+  "recommended_action": "Monitorar ciclos de irrigação e nutrientes"
+}
